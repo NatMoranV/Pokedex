@@ -1,0 +1,92 @@
+* {
+  font-family: 'Shadows Into Light', cursive;
+  }
+  
+  body {
+    background-color: rgb(28, 28, 36);
+  }
+#header{
+  display: flex;
+  justify-content: center;
+}
+
+  #logo {
+    width: 200px;
+  }
+  
+  #banner {
+    width: 92%;
+    margin: 50px 4%;
+    box-shadow: rgb(255 255 255 / 5%) -5px -5px 10px,
+      rgb(0 0 0 / 73%) 5px 5px 10px;
+    border-radius: 6px;
+    background-image: url("../../assets/images/24932.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .video {
+    display: block;
+    opacity: 0;
+    border-radius: 4px;
+    border-bottom: 3px solid rgb(190, 190, 190);
+    object-fit: cover;
+    width: 100%;
+    height: 35vh;
+    transition-duration: .5ms;
+    transition: opacity 1s;
+  }
+
+
+  #banner:hover .video{
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  
+  #gallery {
+    padding: 0 4%;
+    display: grid;
+    gap: 3rem 2rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  }
+  
+  .pokemon-card {
+    border-radius: 8px;
+    box-shadow: rgb(255 255 255 / 3%) -5px -5px 10px 2px,
+    rgb(0 0 0 / 40%) 5px 5px 10px 2px;
+    background-color: urgb(28, 28, 36);
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: rgb(255, 255, 255);
+  }
+
+  .img-container{
+    height: 25vh;
+  }
+
+  .sprite{
+    width: auto;
+    height: 100%;
+  }
+
+  .info-container{
+    width: 100%;
+  }
+  .name{
+    text-transform: capitalize;
+    font-size: 2rem;
+  
+  }
+  
+  .pokemon-card:hover{
+    box-shadow: none;
+    cursor: pointer;
+  }
+p{
+  margin: 0;
+  padding: 0;
+}
