@@ -67,5 +67,5 @@ function createPokemon(pokemon) {
 
 }
 
-getPokemones(100)
+getPokemones(200)
 
