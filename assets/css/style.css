@@ -65,12 +65,12 @@
   }
 
   .img-container{
-    height: 25vh;
+    height: auto;
   }
 
   .sprite{
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .info-container{
@@ -78,10 +78,21 @@
   }
   .name{
     text-transform: capitalize;
-    font-size: 2rem;
-  
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
   
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    display: inline;
+    margin-inline: 1rem;
+  }
+
   .pokemon-card:hover{
     box-shadow: none;
     cursor: pointer;

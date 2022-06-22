@@ -51,11 +51,11 @@ function createPokemon(pokemon) {
     
     let tipo = "";
     tipos.forEach(item => {
-        tipo = item.type.name
+        tipo += `<li><img class="type" src="../assets/images/types/${item.type.name}.png"</li>`
     });
     console.log(tipo)
-    const tipoPokemon = document.createElement(`img`);
-    tipoPokemon.src = `../assets/images/types/${tipo}.png`;
+    const tipoPokemon = document.createElement(`ul`);
+    tipoPokemon.innerHTML = `${tipo}`;
     
     card.appendChild(spriteContainer);
     spriteContainer.appendChild(sprite)
@@ -67,5 +67,5 @@ function createPokemon(pokemon) {
 
 }
 
-getPokemones(1)
+getPokemones(100)
 
